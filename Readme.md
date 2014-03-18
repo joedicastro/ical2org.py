@@ -3,8 +3,9 @@ ical2org.py
 ===========
 
 This script converts an ical calendar (for instance, as exported from google
-calendar) into an org-mode document. It is conceived as a replacement of the
-awk script located here:
+calendar) or a list of remote ical calendars (e.g. the ones tha Coursera uses
+into their courses) into an org-mode document. It is conceived as a replacement
+of the awk script located here:
 
 http://orgmode.org/worg/org-tutorials/org-google-sync.html
 
@@ -20,22 +21,7 @@ ical2org.py is a python script and it needs the following libraries:
 
 - icalendar
 - pytz
-
-You can install those packages as follows (thanks to Guido Van Hoecke):
-
-Get iCalendar from https://pypi.python.org/pypi/icalendar, untar it
-and run 
-
-````shell
-sudo python setup.py install
-````
-
-Get pytz from https://pypi.python.org/pypi/pytz/. It comes as an egg
-file so you just run 
-
-````shell
-sudo easy-install pytz-2013b-py2.7.egg
-````
+- requests
 
 Customize the script
 ====================
